@@ -1,4 +1,3 @@
-
 var categoryMap = {
   'general-knowledge': 9,
   'entertainment-books': 10,
@@ -45,10 +44,10 @@ var getTriviaURL = function({category, difficulty = false, count = 10}) {
   console.log('difficulty', difficulty);
   var theURL = 'http://www.opentdb.com/api.php?type=multiple&amount=' + count;
   if (category) {
-    theURL += 'entertainment-film=' + categoryMap[category]
+    theURL += '&category=' + categoryMap[category]
   }
   if (difficulty) {
-    theURL += '&deasy=' + difficulty.toLowerCase()
+    theURL += '&difficulty=' + difficulty.toLowerCase()
   }
   return theURL;
 };
