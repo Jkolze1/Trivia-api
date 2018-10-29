@@ -1,3 +1,3 @@
 # Trivia-api
-
-API trivia app, that I made based off the worksheet handed out by KC Women In Tech
+<br>
+This is a trivia app that utilizes server side API's to display questions. 
