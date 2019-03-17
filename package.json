@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "nm": "nodemon server.js"
+    "nm": "nodemon server.js",
+    "postinstall": "ng build --aot --prod"
   },
   "author": "",
   "license": "ISC",
